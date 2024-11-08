@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap');
+
 /* this is Header-Section start */
 .respScreen{
     @apply mx-auto container;
@@ -19,7 +21,7 @@
     @apply flex gap-6 text-center select-none;
 }
 .header-nav-items{
-    @apply active:text-[#F44335] hover:text-[#F44335] hover:animate-pulse;
+    @apply active:text-[#F44335] hover:text-[#F44335] hover:animate-pulse md:text-lg text-[16px];
 }
 .header-right{
     @apply flex items-center md:gap-4 gap-3 row-start-1 col-start-3 select-none justify-end;
@@ -29,3 +31,38 @@
 }
 /* this is Header-Section end */
 
+/* this is Sign-Up-Section start */
+.sign-up-section{
+    @apply grid md:grid-cols-2 grid-cols-1 justify-between;
+}
+.sign-up-section-left{
+    @apply absolute md:static flex flex-col gap-10 md:ps-14 md:pt-10 pt-[165px];
+}
+.span-1{
+    @apply text-[#F44335] font-semibold text-lg;
+}
+.text-google-term{
+    @apply text-5xl font-bold text-[#072125];
+}
+.text-it-support{
+    @apply text-[#F44335] underline underline-offset-[12px] mb-5;
+}
+.sign-up-section-left-text{
+    @apply md:text-[#072125] text-[#1d1e1e] text-lg mt-12 bg-gray-500/25 shadow-md md:shadow-none p-3 ps-5 rounded-s-full md:rounded-none md:p-0 md:bg-transparent;
+}
+.count-1{
+    @apply text-[#00FF84] font-bold text-lg;
+}
+.count-2{
+    @apply text-[#2D3142] font-semibold;
+}
+.sign-up-section-b-1{
+    @apply flex gap-0.5 text-white bg-[#F44335] px-8 py-4 rounded-lg hover:scale-105 justify-center;
+}
+.sign-up-section-b-2{
+    @apply flex gap-0.5 text-[#072125] bg-white px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center;
+}
+.sign-up-section-right{
+    @apply flex justify-end md:justify-center md:items-center relative md:static -z-10;
+}
+/* this is Sign-Up-Section end */
