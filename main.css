@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* this is Header-Section start */
+.respScreen{
+    @apply mx-auto container;
+}
+.header-flex{
+    @apply p-3 grid grid-cols-3 gap-2 md:flex justify-between items-center respScreen my-4;
+}
+.header-logo{
+    @apply items-center justify-center select-none;
+}
+.header-nav{
+    @apply row-start-2 col-span-2 md:row-start-1 flex col-start-1 col-end-3;
+}
+.header-nav-flex{
+    @apply flex gap-6 text-center select-none;
+}
+.header-nav-items{
+    @apply active:text-[#F44335] hover:text-[#F44335] hover:animate-pulse;
+}
+.header-right{
+    @apply flex items-center md:gap-4 gap-3 row-start-1 col-start-3 select-none justify-end;
+}
+.header-button{
+    @apply flex gap-0.5 text-white bg-[#F44335] px-4 py-2 rounded-lg hover:scale-105 hover:translate-y-1;
+}
+/* this is Header-Section end */
+
