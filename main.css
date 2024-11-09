@@ -91,7 +91,7 @@
     @apply respScreen flex flex-col lg:gap-20 md:gap-6 gap-10 mt-10 md:mt-20;
 }
 .features-section-row{
-    @apply grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 px-6 xl:px-0;
+    @apply grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 px-6 xl:px-16;
 }
 .features-section-div-1{
     @apply text-[#072125] bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4;
@@ -103,7 +103,7 @@
     @apply text-[#072125] bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4;
 }
 .f-s-div-2-button{
-    @apply rounded-full border-[#F9CCC7] border-2 w-fit px-2 py-0.5 hover:scale-105 transition-all hover:drop-shadow-md text-[10px] md:text-sm hover:bg-[#f9ccc7] hover:shadow-md;
+    @apply rounded-full border-[#F9CCC7] border-2 w-fit px-2 py-0.5 hover:scale-105 transition-all hover:drop-shadow-md text-[10px] md:text-sm hover:bg-[#f9ccc7];
 }
 .features-section-div-3{
     @apply text-[#072125] bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4 md:h-72 h-64;
@@ -121,3 +121,27 @@
     @apply invisible absolute md:visible md:static;
 }
 /* this is Features-Section end */
+
+/* this is Courses-Section start */
+/* this is Courses-Section-Main start */
+.courses-section-main{
+    @apply bg-white respScreen xl:px-16 lg:px-10 md:px-8 px-6 md:py-8 py-4 md:pb-10 pb-6 xl:my-20 lg:my-14 md:my-12 my-10 relative;
+}
+.certificate-logo{
+    @apply absolute md:h-full scale-50 sm:scale-75 md:scale-110 lg:right-10 md:right-0 left-20 md:left-auto top-0;
+}
+.courses-section-main-h{
+    @apply font-bold md:text-3xl text-lg text-[#2D3142] xl:w-2/6 lg:w-1/2 md:w-2/3 w-3/4;
+}
+.courses-button-grid{
+    @apply lg:w-2/3 w-1/2 grid lg:grid-cols-5 md:grid-cols-3 md:justify-between;
+}
+.courses-button{
+    @apply xl:my-8 lg:my-6 md:my-4 my-2 uppercase px-5 py-1 rounded-full text-[#2D3142] border-[#232323] md:border-2 border-[1px] lg:scale-100 scale-75 hover:bg-[#2D3142] hover:text-[#00FF84] active:bg-[#00FF84] active:text-[#2D3142] visited:bg-[#00FF84] visited:text-[#2D3142] hover:drop-shadow-xl hover:scale-105 hover:translate-y-1 transition-all;
+}
+/* this is Courses-Section-Main end */
+
+/* this is Courses-Section-page-1 start */
+
+/* this is Courses-Section-page-1 end */
+/* this is Courses-Section end */
