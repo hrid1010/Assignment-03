@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap'); */
 
 /* this is Header-Section start */
 .respScreen{
@@ -27,7 +27,7 @@
     @apply flex justify-around items-center md:gap-4 gap-2 row-start-1 select-none;
 }
 .header-button{
-    @apply flex gap-0.5 text-white bg-[#F44335] px-4 py-2 rounded-lg hover:scale-105 hover:translate-y-1;
+    @apply flex gap-0.5 text-white bg-[#F44335] px-4 py-2 rounded-lg hover:scale-105 hover:text-[16px] hover:translate-y-2 transition;
 }
 /* this is Header-Section end */
 
@@ -76,7 +76,7 @@
     @apply grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-4 lg:gap-6 lg:divide-x-2 py-8 px-6 md:px-12;
 }
 .support-section-text{
-    @apply text-[#072125] md:px-0 bg-gray-400/15 md:bg-transparent rounded-lg px-3 py-2 col-span-2 lg:col-span-1 text-xs lg:text-[15px] font-semibold lg:font-normal;
+    @apply text-[#072125] md:px-0 2xl:px-8 bg-gray-400/15 md:bg-transparent rounded-lg px-3 py-2 col-span-2 lg:col-span-1 text-xs lg:text-[15px] font-semibold lg:font-normal;
 }
 .support-section-items{
     @apply grid grid-cols-3 justify-center items-center divide-x-2 col-span-2 lg:col-span-3;
@@ -85,3 +85,39 @@
     @apply flex justify-center items-center h-full;
 }
 /* this is Support-Section end */
+
+/* this is Features-Section start */
+.features-section{
+    @apply respScreen flex flex-col lg:gap-20 md:gap-6 gap-10 mt-10 md:mt-20;
+}
+.features-section-row{
+    @apply grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 px-6 xl:px-0;
+}
+.features-section-div-1{
+    @apply text-[#072125] bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4;
+}
+.svg-control-1{
+    @apply size-6 md:size-9 bg-[#F9CCC7] text-[#F44335] rounded-full p-2;
+}
+.features-section-div-2{
+    @apply text-[#072125] bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4;
+}
+.f-s-div-2-button{
+    @apply rounded-full border-[#F9CCC7] border-2 w-fit px-2 py-0.5 hover:scale-105 transition-all hover:drop-shadow-md text-[10px] md:text-sm hover:bg-[#f9ccc7] hover:shadow-md;
+}
+.features-section-div-3{
+    @apply text-[#072125] bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4 md:h-72 h-64;
+}
+.svg-control-2{
+    @apply size-8 md:size-9 bg-white font-extrabold text-black rounded-full p-2;
+}
+.f-s-div-3-grid{
+    @apply grid grid-cols-2 pt-4 gap-4 justify-center items-center;
+}
+.f-s-div-3-items{
+    @apply flex flex-row gap-1 items-center xl:mx-16 lg:mx-4 mx-1 lg:text-lg;
+}
+.features-section-div-4{
+    @apply invisible absolute md:visible md:static;
+}
+/* this is Features-Section end */
