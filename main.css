@@ -9,22 +9,22 @@
     @apply mx-auto container;
 }
 .header-flex{
-    @apply p-3 grid grid-cols-3 gap-2 md:flex justify-between items-center respScreen my-4;
+    @apply p-3 grid grid-cols-2 md:grid-cols-3 grid-rows-2 md:grid-rows-1 gap-2 md:flex justify-between items-center respScreen my-4 bg-white;
 }
 .header-logo{
-    @apply items-center justify-center select-none;
+    @apply row-start-1 items-center justify-center select-none;
 }
 .header-nav{
-    @apply row-start-2 col-span-2 md:row-start-1 flex col-start-1 col-end-3;
+    @apply row-start-2 col-span-2 md:row-start-1 flex;
 }
 .header-nav-flex{
     @apply flex gap-6 text-center select-none;
 }
 .header-nav-items{
-    @apply active:text-[#F44335] hover:text-[#F44335] hover:animate-pulse md:text-lg text-[16px];
+    @apply active:text-[#F44335] hover:text-[#F44335] hover:animate-pulse md:text-lg text-[14px];
 }
 .header-right{
-    @apply flex items-center md:gap-4 gap-3 row-start-1 col-start-3 select-none justify-end;
+    @apply flex justify-around items-center md:gap-4 gap-2 row-start-1 select-none;
 }
 .header-button{
     @apply flex gap-0.5 text-white bg-[#F44335] px-4 py-2 rounded-lg hover:scale-105 hover:translate-y-1;
@@ -36,7 +36,7 @@
     @apply grid md:grid-cols-2 grid-cols-1 justify-between;
 }
 .sign-up-section-left{
-    @apply absolute md:static flex flex-col gap-10 md:ps-14 md:pt-10 pt-[165px];
+    @apply relative md:static flex flex-col gap-10 md:ps-14 md:pt-10 pt-[165px];
 }
 .span-1{
     @apply text-[#F44335] font-semibold text-lg;
@@ -48,7 +48,7 @@
     @apply text-[#F44335] underline underline-offset-[12px] mb-5;
 }
 .sign-up-section-left-text{
-    @apply md:text-[#072125] text-[#1d1e1e] text-lg mt-12 bg-gray-500/25 shadow-md md:shadow-none p-3 ps-5 rounded-s-full md:rounded-none md:p-0 md:bg-transparent;
+    @apply md:text-[#072125] text-[#1d1e1e] text-lg lg:mt-12 mt-6;
 }
 .count-1{
     @apply text-[#00FF84] font-bold text-lg;
@@ -56,13 +56,32 @@
 .count-2{
     @apply text-[#2D3142] font-semibold;
 }
+.sign-up-section-b-grid{
+    @apply px-6 pt-8 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+}
 .sign-up-section-b-1{
     @apply flex gap-0.5 text-white bg-[#F44335] px-8 py-4 rounded-lg hover:scale-105 justify-center;
 }
 .sign-up-section-b-2{
-    @apply flex gap-0.5 text-[#072125] bg-white px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center;
+    @apply flex gap-0.5 text-[#072125] bg-white px-10 lg:px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center;
 }
 .sign-up-section-right{
-    @apply flex justify-end md:justify-center md:items-center relative md:static -z-10;
+    @apply invisible absolute md:static md:visible flex justify-end md:justify-center md:items-center ;
 }
+
 /* this is Sign-Up-Section end */
+
+/* this is Support-Section start */
+.support-section-grid{
+    @apply grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-4 lg:gap-6 lg:divide-x-2 py-8 px-6 md:px-12;
+}
+.support-section-text{
+    @apply text-[#072125] md:px-0 bg-gray-400/15 md:bg-transparent rounded-lg px-3 py-2 col-span-2 lg:col-span-1 text-xs lg:text-[15px] font-semibold lg:font-normal;
+}
+.support-section-items{
+    @apply grid grid-cols-3 justify-center items-center divide-x-2 col-span-2 lg:col-span-3;
+}
+.s-s-items-flex{
+    @apply flex justify-center items-center h-full;
+}
+/* this is Support-Section end */
