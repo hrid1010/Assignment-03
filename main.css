@@ -212,7 +212,7 @@
   @apply respScreen;
 }
 .review-section-div {
-  @apply absolute bg-white rounded-lg 2xl:w-1/4 xl:w-[30%] lg:w-[40%] md:w-[40%] 2xl:h-2/5 xl:h-1/2 h-auto 2xl:mx-32 xl:mx-28 lg:mx-24 md:mx-3 2xl:p-8 md:p-4 p-2 2xl:pt-16 2xl:space-y-5 space-y-3 scale-50 md:scale-100 hover:drop-shadow-2xl hover:scale-105 transition-all duration-200;
+  @apply absolute bg-white rounded-lg 2xl:w-1/4 xl:w-[30%] lg:w-[40%] md:w-[40%] 2xl:h-fit xl:h-1/2 h-auto 2xl:mx-64 xl:mx-28 lg:mx-24 md:mx-3 2xl:p-8 md:p-4 p-2 2xl:pt-16 2xl:space-y-5 space-y-3 scale-50 md:scale-100 hover:drop-shadow-2xl hover:scale-105 transition-all duration-200;
 }
 .r-s-div-text-1 {
   @apply text-[#072125] 2xl:text-3xl xl:text-xl md:text-[16px] text-[12px] font-semibold;
