@@ -220,3 +220,34 @@
 .r-s-div-text-2 {
   @apply text-[#F9CCC7] 2xl:text-2xl xl:text-lg md:text-[14px] text-[10px];
 }
+/* this is Review-Section end */
+
+/* this is Footer-Section start */
+.footer-section {
+  @apply respScreen flex flex-col divide-y-2 text-[#20484F];
+}
+.footer-section-div-grid {
+  @apply grid md:grid-cols-6 justify-center md:ps-8 md:pe-0 px-1 py-6;
+}
+.footer-section-div-1 {
+  @apply grid md:col-span-2 col-span-4 w-full 2xl:ps-24 xl:ps-3;
+}
+.foot-s-div-1-head {
+  @apply flex justify-start;
+}
+.foot-s-div-1-bottom {
+  @apply flex justify-between md:gap-2 gap-4 md:flex-col flex-row w-full md:text-[12px] text-[10px] md:ps-4;
+}
+.footer-section-div-2 {
+  @apply grid md:grid-cols-4 grid-cols-2 col-span-4 gap-4;
+}
+.foot-s-div-2-flexs {
+  @apply md:text-[12px] text-[10px] h-full flex flex-col md:gap-4 gap-2 pt-3 md:ps-0 ps-5;
+}
+.foot-s-div-2-head {
+  @apply font-bold 2xl:text-[20px] xl:text-[18px] text-[13px];
+}
+.footer-section-copyright {
+  @apply md:text-[12px] text-[10px] text-center py-1;
+}
+/* this is Footer-Section end */
