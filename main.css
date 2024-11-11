@@ -21,7 +21,7 @@
   @apply flex gap-6 text-center select-none;
 }
 .header-nav-items {
-  @apply active:text-[#F44335] hover:text-[#F44335] hover:animate-pulse md:text-lg text-[14px];
+  @apply active:text-[#F44335] hover:text-[#F44335] transition-all hover:animate-pulse md:text-lg text-[14px];
 }
 .header-right {
   @apply flex justify-around items-center md:gap-4 gap-2 row-start-1 select-none;
@@ -60,10 +60,10 @@
   @apply px-6 pt-8 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
 }
 .sign-up-section-b-1 {
-  @apply flex gap-0.5 text-white bg-[#F44335] px-10 lg:px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center;
+  @apply flex gap-0.5 text-white bg-[#F44335] px-10 lg:px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center transition;
 }
 .sign-up-section-b-2 {
-  @apply flex gap-0.5 text-[#072125] bg-white px-10 lg:px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center;
+  @apply flex gap-0.5 text-[#072125] bg-white px-10 lg:px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center transition;
 }
 .sign-up-section-right {
   @apply invisible absolute md:static md:visible flex justify-end md:justify-center md:items-center;
@@ -112,10 +112,10 @@
   @apply size-8 md:size-9 bg-white font-extrabold text-black rounded-full p-2;
 }
 .f-s-div-3-grid {
-  @apply grid grid-cols-2 pt-4 gap-4 justify-center items-center;
+  @apply grid grid-cols-2 pt-4 gap-0 justify-center items-center;
 }
 .f-s-div-3-items {
-  @apply flex flex-row gap-1 items-center xl:mx-16 lg:mx-4 mx-1 lg:text-lg;
+  @apply flex flex-row gap-1 items-center xl:mx-8 lg:mx-4 mx-1 lg:text-lg;
 }
 .features-section-div-4 {
   @apply invisible absolute md:visible md:static;
@@ -173,10 +173,10 @@
   @apply px-6 pt-8 md:flex md:flex-row grid grid-cols-1 md:justify-around justify-between items-center gap-4 md:gap-0;
 }
 .c-p-section-b-1 {
-  @apply text-white bg-[#F44335] px-6 md:px-8 lg:px-8 py-4 rounded-lg hover:scale-105 justify-center w-full;
+  @apply text-white bg-[#F44335] px-6 md:px-8 lg:px-8 py-4 rounded-lg hover:scale-105 justify-center w-full transition;
 }
 .c-p-section-b-2 {
-  @apply text-[#072125] bg-white px-6 md:px-10 lg:px-8 py-4 rounded-lg hover:scale-105 justify-center w-full;
+  @apply text-[#072125] bg-white px-6 md:px-10 lg:px-8 py-4 rounded-lg hover:scale-105 justify-center w-full transition;
 }
 .svg-control-3 {
   @apply size-6 bg-[#F9CCC7] text-[#F44335] rounded-full p-2;
