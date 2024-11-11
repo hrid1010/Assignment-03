@@ -148,6 +148,9 @@
 .vector-02 {
   @apply respScreen scale-75 2xl:-mb-16 xl:-mb-14 xl:-mt-64 lg:-mb-12 lg:-mt-72 invisible absolute lg:visible lg:static;
 }
+.vector-03 {
+  @apply respScreen scale-75 2xl:-mb-[70px] xl:-mb-[62px] xl:-mt-64 lg:-mb-12 lg:-mt-72 invisible absolute lg:visible lg:static;
+}
 .courses-grid {
   @apply grid lg:grid-cols-12 drop-shadow-lg mx-auto xl:w-[92%] lg:w-auto md:w-5/6;
 }
@@ -190,7 +193,10 @@
   @apply respScreen px-6 xl:px-16 xl:mb-48 lg:mb-60 md:mb-12 mb-10 -z-10;
 }
 .course-3 {
-  @apply respScreen px-6 xl:px-16 xl:mb-0 lg:mb-40 md:mb-12 mb-10 -z-10;
+  @apply respScreen px-6 xl:px-16 xl:mb-44 lg:mb-60 md:mb-12 mb-10 -z-10;
+}
+.course-4 {
+  @apply respScreen px-6 xl:px-16 xl:mb-48 lg:mb-60 md:mb-12 mb-10 -z-10;
 }
 /* this is Courses-Section-pages end */
 /* this is Courses-Section end */
