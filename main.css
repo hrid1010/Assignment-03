@@ -9,10 +9,10 @@
   @apply mx-auto container;
 }
 .header-flex {
-  @apply p-3 grid grid-cols-2 md:grid-cols-3 grid-rows-2 md:grid-rows-1 gap-2 md:flex justify-between items-center respScreen my-4 bg-white;
+  @apply respScreen rounded p-3 grid grid-cols-2 md:grid-cols-3 grid-rows-2 md:grid-rows-1 gap-2 md:flex justify-between items-center respScreen my-4 bg-white dark:bg-gray-800 dark:drop-shadow-md;
 }
 .header-logo {
-  @apply row-start-1 items-center justify-center select-none;
+  @apply row-start-1 items-center justify-center select-none dark:stroke-gray-900;
 }
 .header-nav {
   @apply row-start-2 col-span-2 md:row-start-1 flex;
@@ -21,13 +21,13 @@
   @apply flex gap-6 text-center select-none;
 }
 .header-nav-items {
-  @apply active:text-[#F44335] hover:text-[#F44335] transition-all hover:animate-pulse md:text-lg text-[14px];
+  @apply active:text-[#F44335] dark:active:text-[#F44335] hover:text-[#F44335] dark:hover:text-[#F44335] transition-all delay-200 duration-300 dark:animate-pulse dark:duration-1000 hover:animate-pulse md:text-lg text-[14px];
 }
 .header-right {
   @apply flex justify-around items-center md:gap-4 gap-2 row-start-1 select-none;
 }
 .header-button {
-  @apply flex gap-0.5 text-white bg-[#F44335] px-4 py-2 rounded-lg hover:scale-105 hover:text-[16px] hover:translate-y-2 transition;
+  @apply flex gap-0.5 text-white bg-[#F44335] px-4 py-2 rounded-lg hover:scale-105 hover:text-[16px] hover:translate-y-2 transition dark:text-gray-900 dark:bg-[#fa5246];
 }
 /* this is Header-Section end */
 
@@ -42,13 +42,13 @@
   @apply text-[#F44335] font-semibold text-lg;
 }
 .text-google-term {
-  @apply text-5xl font-bold text-[#072125];
+  @apply text-5xl font-bold text-[#0b2e34] dark:text-slate-500;
 }
 .text-it-support {
   @apply text-[#F44335] underline underline-offset-[12px] mb-5;
 }
 .sign-up-section-left-text {
-  @apply md:text-[#072125] text-[#1d1e1e] text-lg lg:mt-12 mt-6;
+  @apply md:text-[#072125] text-[#1d1e1e] dark:text-slate-600 text-lg lg:mt-12 mt-6;
 }
 .count-1 {
   @apply text-[#00FF84] font-bold text-lg;
@@ -57,13 +57,13 @@
   @apply text-[#2D3142] font-semibold;
 }
 .sign-up-section-b-grid {
-  @apply px-6 pt-8 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  @apply px-6 pt-8 grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6 gap-3 justify-center;
 }
 .sign-up-section-b-1 {
-  @apply flex gap-0.5 text-white bg-[#F44335] px-10 lg:px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center transition;
+  @apply flex gap-0.5 text-white bg-[#F44335] px-10 lg:px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center transition w-full dark:text-slate-300;
 }
 .sign-up-section-b-2 {
-  @apply flex gap-0.5 text-[#072125] bg-white px-10 lg:px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center transition;
+  @apply flex gap-0.5 text-[#072125] bg-white px-10 lg:px-8 py-4 rounded-lg hover:scale-105 shadow-md justify-center transition w-full dark:bg-slate-300;
 }
 .sign-up-section-right {
   @apply invisible absolute md:static md:visible flex justify-end md:justify-center md:items-center;
@@ -73,13 +73,13 @@
 
 /* this is Support-Section start */
 .support-section-grid {
-  @apply grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-4 lg:gap-6 lg:divide-x-2 py-8 px-6 md:px-12;
+  @apply grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-4 lg:gap-6 lg:divide-x-2 dark:divide-slate-400 py-8 px-6 md:px-12;
 }
 .support-section-text {
-  @apply text-[#072125] md:px-0 2xl:px-8 bg-gray-400/15 md:bg-transparent rounded-lg px-3 py-2 col-span-2 lg:col-span-1 text-xs lg:text-[15px] font-semibold lg:font-normal;
+  @apply text-[#072125] md:px-0 2xl:px-8 bg-gray-400/15 md:bg-transparent rounded-lg px-3 py-2 col-span-2 lg:col-span-1 text-xs lg:text-[15px] font-semibold lg:font-normal dark:text-slate-300;
 }
 .support-section-items {
-  @apply grid grid-cols-3 justify-center items-center divide-x-2 col-span-2 lg:col-span-3;
+  @apply grid grid-cols-3 justify-center items-center divide-x-2 dark:divide-slate-400 col-span-2 lg:col-span-3;
 }
 .s-s-items-flex {
   @apply flex justify-center items-center h-full;
@@ -94,22 +94,22 @@
   @apply grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 px-6 xl:px-16;
 }
 .features-section-div-1 {
-  @apply text-[#072125] bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4;
+  @apply text-[#072125] dark:text-slate-300 dark:divide-[#fabbb] dark:bg-gray-700 bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4;
 }
 .svg-control-1 {
-  @apply size-6 md:size-9 bg-[#F9CCC7] text-[#F44335] rounded-full p-2;
+  @apply size-6 md:size-9 bg-[#F9CCC7] dark:bg-[#fabbb3] text-[#F44335] rounded-full p-2;
 }
 .features-section-div-2 {
-  @apply text-[#072125] bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4;
+  @apply text-[#072125] dark:text-slate-300 dark:divide-[#fabbb] dark:bg-gray-700 bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4;
 }
 .f-s-div-2-button {
-  @apply rounded-full border-[#F9CCC7] border-2 w-fit px-2 py-0.5 hover:scale-105 transition-all hover:drop-shadow-md text-[10px] md:text-sm hover:bg-[#f9ccc7];
+  @apply rounded-full border-[#F9CCC7] border-2 w-fit px-2 py-0.5 hover:scale-105 transition-all hover:drop-shadow-md text-[10px] md:text-sm hover:bg-[#f9ccc7] dark:bg-[#f9ccc7] dark:hover:bg-gray-900 dark:text-gray-900 dark:border-gray-900 dark:hover:border-[#f9ccc7] dark:drop-shadow-xl dark:hover:text-[#f9ccc7] dark:transition-all;
 }
 .features-section-div-3 {
-  @apply text-[#072125] bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4 md:h-72 h-64;
+  @apply text-[#072125] dark:text-slate-300 dark:divide-[#fabbb] dark:bg-gray-700 bg-white flex flex-col px-4 divide-y-2 divide-[#F9CCC7] drop-shadow-lg rounded-2xl py-4 md:h-72 h-64;
 }
 .svg-control-2 {
-  @apply size-8 md:size-9 bg-white font-extrabold text-black rounded-full p-2;
+  @apply size-8 md:size-9 bg-white dark:text-slate-500 dark:bg-gray-700 font-extrabold text-black rounded-full p-2;
 }
 .f-s-div-3-grid {
   @apply grid grid-cols-2 pt-4 gap-0 justify-center items-center;
@@ -118,26 +118,26 @@
   @apply flex flex-row gap-1 items-center xl:mx-8 lg:mx-4 mx-1 lg:text-lg;
 }
 .features-section-div-4 {
-  @apply invisible absolute md:visible md:static;
+  @apply invisible absolute md:visible md:static drop-shadow-lg rounded-2xl;
 }
 /* this is Features-Section end */
 
 /* this is Courses-Section start */
 /* this is Courses-Section-Main start */
 .courses-section-main {
-  @apply bg-white respScreen xl:px-16 lg:px-10 md:px-8 px-6 md:py-8 py-4 md:pb-10 pb-6 xl:my-20 lg:my-14 md:my-12 my-10 relative;
+  @apply bg-white respScreen xl:px-16 lg:px-10 md:px-8 px-6 md:py-8 py-4 md:pb-10 pb-6 xl:my-20 lg:my-14 md:my-12 my-10 relative dark:bg-gray-800;
 }
 .certificate-logo {
   @apply absolute md:h-full scale-50 sm:scale-75 md:scale-110 lg:right-10 md:right-0 left-20 md:left-auto top-0;
 }
 .courses-section-main-h {
-  @apply font-bold md:text-3xl text-lg text-[#2D3142] xl:w-2/6 lg:w-1/2 md:w-2/3 w-3/4;
+  @apply font-bold md:text-3xl text-lg text-[#2D3142] xl:w-2/6 lg:w-1/2 md:w-2/3 w-3/4 dark:text-slate-700;
 }
 .courses-button-grid {
   @apply lg:w-2/3 w-1/2 grid lg:grid-cols-5 md:grid-cols-3 md:justify-between;
 }
 .courses-button {
-  @apply xl:my-8 lg:my-6 md:my-4 my-2 uppercase px-5 py-1 rounded-full text-[#2D3142] border-[#232323] md:border-2 border-[1px] lg:scale-100 scale-75 hover:bg-[#2D3142] hover:text-[#00FF84] active:bg-[#00FF84] active:text-[#2D3142] visited:bg-[#00FF84] visited:text-[#2D3142] hover:drop-shadow-xl hover:scale-105 hover:translate-y-1 transition-all;
+  @apply xl:my-8 lg:my-6 md:my-4 my-2 uppercase px-5 py-1 rounded-full text-[#2D3142] border-[#232323] md:border-2 border-[1px] lg:scale-100 scale-75 hover:bg-[#2D3142] hover:text-[#00FF84] active:bg-[#00FF84] active:text-[#2D3142] visited:bg-[#00FF84] visited:text-[#2D3142] hover:drop-shadow-xl hover:scale-105 hover:translate-y-1 transition-all dark:text-slate-900 dark:bg-slate-600 dark:hover:bg-[#00FF84] dark:border-[#00FF84];
 }
 /* this is Courses-Section-Main end */
 
@@ -161,10 +161,10 @@
   @apply bg-[#2D3142] flex flex-col lg:col-span-4 col-span-8 gap-4 lg:p-5 md:p-6 p-4 lg:rounded-s-xl rounded-t-xl lg:rounded-e-none md:h-fit lg:h-auto;
 }
 .courses-page-header-bottom {
-  @apply text-white text-[11px] md:text-sm lg:flex lg:items-end lg:h-full xl:mb-3 lg:mb-2 mb-0;
+  @apply text-white text-[11px] md:text-sm lg:flex lg:items-end lg:h-full xl:mb-3 lg:mb-2 mb-0 dark:text-slate-400;
 }
 .courses-page-footer {
-  @apply bg-white flex flex-col col-span-8 gap-4 lg:p-4 md:p-6 p-4 lg:pb-6 md:pb-8 pb-6 xl:ps-6 lg:rounded-e-xl rounded-b-xl lg:rounded-s-none;
+  @apply bg-white flex flex-col col-span-8 gap-4 lg:p-4 md:p-6 p-4 lg:pb-6 md:pb-8 pb-6 xl:ps-6 lg:rounded-e-xl rounded-b-xl lg:rounded-s-none dark:bg-gray-500;
 }
 .courses-page-footer-bottom {
   @apply list-disc ps-6 text-[#F9CCC7] space-y-2 xl:pt-3 md:pt-2 pt-1 text-[10px] md:text-sm;
@@ -173,10 +173,10 @@
   @apply px-6 pt-8 md:flex md:flex-row grid grid-cols-1 md:justify-around justify-between items-center gap-4 md:gap-0;
 }
 .c-p-section-b-1 {
-  @apply text-white bg-[#F44335] px-6 md:px-8 lg:px-8 py-4 rounded-lg hover:scale-105 justify-center w-full transition;
+  @apply text-white bg-[#F44335] px-6 md:px-8 lg:px-8 py-4 rounded-lg hover:scale-105 justify-center w-full transition dark:text-slate-300;
 }
 .c-p-section-b-2 {
-  @apply text-[#072125] bg-white px-6 md:px-10 lg:px-8 py-4 rounded-lg hover:scale-105 justify-center w-full transition;
+  @apply text-[#072125] bg-white px-6 md:px-10 lg:px-8 py-4 rounded-lg hover:scale-105 justify-center w-full transition dark:bg-slate-300;
 }
 .svg-control-3 {
   @apply size-6 bg-[#F9CCC7] text-[#F44335] rounded-full p-2;
@@ -185,7 +185,7 @@
   @apply md:space-x-2 flex md:flex-row flex-col justify-center md:justify-start items-center md:items-center md:gap-4 gap-2 w-2/3 mx-auto md:mx-0 md:w-full;
 }
 .c-p-section-b-3 {
-  @apply rounded-full border-[#F9CCC7] border-2 w-full md:w-fit px-2 py-0.5 hover:scale-105 transition-all hover:drop-shadow-md text-[10px] md:text-sm hover:bg-[#f9ccc7];
+  @apply rounded-full border-[#F9CCC7] border-2 w-full md:w-fit px-2 py-0.5 hover:scale-105 transition-all hover:drop-shadow-md text-[10px] md:text-sm hover:bg-[#f9ccc7] dark:bg-gray-800 dark:hover:bg-[#f9ccc7] dark:text-slate-500 dark:border-gray-900 dark:hover:border-[#f9ccc7] dark:drop-shadow-xl dark:hover:text-gray-900 dark:transition-all;
 }
 
 /* Courses */
@@ -212,10 +212,10 @@
   @apply respScreen;
 }
 .review-section-div {
-  @apply absolute bg-white rounded-lg 2xl:w-1/4 xl:w-[30%] lg:w-[40%] md:w-[40%] 2xl:h-fit xl:h-1/2 h-auto 2xl:mx-64 xl:mx-28 lg:mx-24 md:mx-3 2xl:p-8 md:p-4 p-2 2xl:pt-16 2xl:space-y-5 space-y-3 scale-50 md:scale-100 hover:drop-shadow-2xl hover:scale-105 transition-all duration-200;
+  @apply absolute bg-white rounded-lg 2xl:w-1/4 xl:w-[30%] lg:w-[40%] md:w-[40%] 2xl:h-fit xl:h-1/2 h-auto 2xl:mx-64 xl:mx-28 lg:mx-24 md:mx-3 2xl:p-8 md:p-4 p-2 2xl:pt-16 2xl:space-y-5 space-y-3 scale-50 md:scale-100 hover:drop-shadow-2xl hover:scale-105 transition-all duration-200 dark:bg-gray-700;
 }
 .r-s-div-text-1 {
-  @apply text-[#072125] 2xl:text-3xl xl:text-xl md:text-[16px] text-[12px] font-semibold;
+  @apply text-[#072125] 2xl:text-3xl xl:text-xl md:text-[16px] text-[12px] font-semibold dark:text-slate-400;
 }
 .r-s-div-text-2 {
   @apply text-[#F9CCC7] 2xl:text-2xl xl:text-lg md:text-[14px] text-[10px];
@@ -224,7 +224,7 @@
 
 /* this is Footer-Section start */
 .footer-section {
-  @apply respScreen flex flex-col divide-y-2 text-[#20484F];
+  @apply respScreen flex flex-col divide-y-2 dark:divide-slate-700 text-[#20484F];
 }
 .footer-section-div-grid {
   @apply grid md:grid-cols-6 justify-center md:ps-8 md:pe-0 px-1 py-6;
@@ -236,18 +236,18 @@
   @apply flex justify-start;
 }
 .foot-s-div-1-bottom {
-  @apply flex justify-between md:gap-2 gap-4 md:flex-col flex-row w-full md:text-[12px] text-[10px] md:ps-4;
+  @apply flex justify-between md:gap-2 gap-4 md:flex-col flex-row w-full md:text-[12px] text-[10px] md:ps-4 dark:text-slate-500;
 }
 .footer-section-div-2 {
   @apply grid md:grid-cols-4 grid-cols-2 col-span-4 gap-4;
 }
 .foot-s-div-2-flexs {
-  @apply md:text-[12px] text-[10px] h-full flex flex-col md:gap-4 gap-2 pt-3 md:ps-0 ps-5;
+  @apply md:text-[12px] text-[10px] h-full flex flex-col md:gap-4 gap-2 pt-3 md:ps-0 ps-5 dark:text-slate-500;
 }
 .foot-s-div-2-head {
-  @apply font-bold 2xl:text-[20px] xl:text-[18px] text-[13px];
+  @apply font-bold 2xl:text-[20px] xl:text-[18px] text-[13px] dark:text-slate-400;
 }
 .footer-section-copyright {
-  @apply md:text-[12px] text-[10px] text-center py-1;
+  @apply md:text-[12px] text-[10px] text-center py-1 dark:text-slate-600;
 }
 /* this is Footer-Section end */
